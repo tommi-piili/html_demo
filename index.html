@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!--Bootsrap libraries-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--CSS-->
+    <!--<link rel="stylesheet" href="portfolio.css">-->
+
+    <!-- Social media icon library 
+    https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="index-page">
+
+    <!-- BSDemo1 navbar alka-->
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- BSDemo1 navbar loppuu-->
+
+
+    <main class="main bg-light">
+
+        <style>
+            .html, .body{
+                height: 100%;
+            }
+            #hero {
+                background-color: hsla(0, 0%, 0%);
+            }
+
+            /*https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background_hero*/
+            .hero-image {
+                background-image: url("images/noble-castle-wide.jpg");
+                /*background: url("images/noble-castle-wide.jpg");*/
+                /*background: hsla(0, 0%, 0%, 0.3); */
+                height: 500px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                opacity: 0.8;
+            }
+
+            .hero-text {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                opacity: 1;
+            }
+
+            /*
+            #hero-h2, #hero-p{
+                
+            }
+            */
+        </style>
+
+        <!--HERO SECTION-->
+        <!--<section id="hero" class="bg-dark text-light">-->
+        <section id="hero">
+
+            <!--
+            <img class="img-fluid bg-image" src="images/noble-castle-wide.jpg" alt="herokuva"
+                style="position: relative; z-index: 0">
+             -->
+
+            <!--
+            <div class="container-fluid text-center border">
+                <div>
+                    <h2>Otsikko</h2>
+                </div>
+                <div class="row">
+                    <h2>Otsikko</h2>
+                </div>
+            </div>
+            -->
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h2 id="hero-h2">Otsikko</h2>
+                    <p id="hero-p">Kuvaus</p>
+                </div>
+            </div>
+
+
+        </section>
+        <!--/HERO SECTION-->
+
+
+        <!--ABOUT SECTION-->
+        <section id="about" class="my-4">
+
+            <!--Section title-->
+            <div class="container section-title my-4">
+                <h2 class="text-center">About</h2>
+            </div>
+            <!--/Section title-->
+
+            <!--About section < Large-->
+            <div class="container d-lg-none">
+                <div class="row">
+                    <div class="col-md-6 border text-center">
+                        <img class="img-fluid p-4" src="images/mandala.png">
+                    </div>
+                    <div class="col-md-6 border">
+                        <div class="row">
+                            <h5 class="my-2">Nimi Niminen</h5>
+                            <p> <strong>Email: </strong> teksti@teksti.teksti <br>
+                                <strong>Phone: </strong>+358 1111 333
+                            </p>
+                        </div>
+                        <div class="row">
+                            <h5>Skills:</h5>
+                            <p><strong>HTML</strong>
+                                <strong>CSS</strong>
+                                <strong>JavaScript</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <h4>About me:</h4>
+                    <p>Tekstiä tekstiä tekstiä tekstiä.
+                        Tekstiä tekstiä tekstiä tekstiä.
+                        Tekstiä tekstiä tekstiä tekstiä.
+                        Tekstiä tekstiä tekstiä tekstiä.
+                        Tekstiä tekstiä tekstiä tekstiä.
+                    </p>
+                </div>
+            </div>
+            <!--/About section < Large-->
+
+
+            <!--About section Large-->
+            <div class="container d-none d-lg-block">
+                <div class="row">
+                    <div class="col border mx-2">
+                        <div class="row">
+                            <div class="col-lg-6 border">
+                                <img class="img-fluid p-4" src="images/mandala.png">
+                            </div>
+                            <div class="col-lg-6 border">
+                                <h5 class="my-2">Nimi Niminen</h5>
+                                <p> <strong>Email: </strong> teksti@teksti.teksti <br>
+                                    <strong>Phone: </strong>+358 1111 333
+                                </p>
+                                <h5>Skills: </h5>
+                                <p><strong>HTML</strong>
+                                    <strong>CSS</strong>
+                                    <strong>JavaScript</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col border mx-2">
+                        <div class="row">
+                            <h4 class="my-2">About me:</h4>
+                            <p>Tekstiä tekstiä tekstiä tekstiä.
+                                Tekstiä tekstiä tekstiä tekstiä.
+                                Tekstiä tekstiä tekstiä tekstiä.
+                                Tekstiä tekstiä tekstiä tekstiä.
+                                Tekstiä tekstiä tekstiä tekstiä.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/About section Large-->
+
+        </section>
+        <!--/ABOUT SECTION-->
+
+
+        <!--PORTFOLIO SECTION-->
+        <section id="portfolio" class="my-4">
+
+            <!--Section title-->
+            <div class="container section-title">
+                <h2 class="text-center">Portfolio</h2>
+                <p class="text-center">Portfolion kuvaus</p>
+            </div>
+            <!--/Section title-->
+
+            <!--Portfolio items < Large-->
+            <div class="container px-2 d-lg-none">
+
+                <!--1st element-->
+                <div class="row">
+                    <div class="col border m-2">
+                        <h2 class="text-center my-2">Portfolio item 1</h2>
+                        <p class="text-center">Portfolio item 1 kuvaus</p>
+                    </div>
+                </div>
+
+                <!--2nd element-->
+                <div class="row">
+                    <div class="col border m-2">
+                        <h2 class="text-center my-2">Portfolio item 2</h2>
+                        <p class="text-center">Portfolio item 2 kuvaus</p>
+                    </div>
+                </div>
+
+                <!--3rd element-->
+                <div class="row">
+                    <div class="col border m-2">
+                        <h2 class="text-center my-2">Portfolio item 3</h2>
+                        <p class="text-center">Portfolio item 3 kuvaus</p>
+                    </div>
+                </div>
+            </div>
+            <!--/Portfolio items < Large-->
+
+            <!--Portfolio items Large-->
+            <div class="container px-2 d-none d-lg-block">
+
+                <!-- 1st row -->
+                <div class="row">
+
+                    <!--portfolio item 1-->
+                    <div class="col border m-2">
+                        <div class="portfolio-info">
+                            <h2 class="text-center my-2">Portfolio item 1</h2>
+                            <p class="text-center">Portfolio item 1 kuvaus</p>
+                        </div>
+                    </div>
+
+                    <!--portfolio item 2-->
+                    <div class="col border m-2">
+                        <div class="portfolio-info">
+                            <h2 class="text-center my-2">Portfolio item 2</h2>
+                            <p class="text-center">Portfolio item 2 kuvaus</p>
+                        </div>
+                    </div>
+
+                    <!--portfolio item 3-->
+                    <div class="col border m-2">
+                        <div class="portfolio-info">
+                            <h2 class="text-center my-2">Portfolio item 3</h2>
+                            <p class="text-center">Portfolio item 3 kuvaus</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--/Portfolio items Large-->
+
+        </section>
+        <!--/PORTFOLIO SECTION-->
+
+
+        <!--CONTACT SECTION-->
+
+        <!--Section title-->
+        <section id="contact" class="pb-4">
+            <div class="container">
+                <h2 class="text-center">Contact</h2>
+            </div>
+            <!--/Section title-->
+
+            <div class="container text-center">
+                <!--1st row-->
+                <div class="row">
+                    <!--phone-->
+                    <div class="col border m-2">
+                        <h3 class="my-2">Phone</h3>
+                        <p>+358 1111 333</p>
+                    </div>
+
+                    <!--email-->
+                    <div class="col border m-2">
+                        <h3 class="my-2">Email</h3>
+                        <p>info@info.info</p>
+                    </div>
+                </div>
+
+                <style>
+                    .fa {
+                        padding: 5px 20px;
+                        font-size: 30px;
+                        text-align: center;
+                        text-decoration: none;
+                        margin: 5px 2px;
+                    }
+
+                    .fa:hover {
+                        opacity: 0.7;
+                    }
+                </style>
+
+                <!--2nd row-->
+                <!--
+                <div class="row">
+                    <div class="col border m-2">
+                        <h3>Social media</h3>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-github"></a>
+                    </div>
+
+                </div>
+                -->
+            </div>
+
+        </section>
+        <!--/CONTACT SECTION-->
+
+
+    </main>
+
+    <!--Footer-->
+    <footer class="py-3" style="background-color: rgb(206, 206, 207);">
+        <div class="container">
+            <div>
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#" class="fa fa-facebook"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="fa fa-github"></a>
+                    </li>
+                </ul>
+                <p class="text-center text-body-secondary">Copyright 2024</p>
+            </div>
+        </div>
+    </footer>
+    <!--/Footer-->
+</body>
+
+</html>
