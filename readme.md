@@ -1,1 +1,1 @@
-Link to [portfolio] (https://tommi-piili.github.io/html_demo/)
+Link to [portfolio] (https://tommi-piili.github.io/portfolio/)
